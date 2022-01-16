@@ -20,9 +20,6 @@ struct TW
 };
 
 void dodaj_krawedz(int x, int y, int z){
-
-    if(x > np) np = x;
-    if(y > np) np = y;
     pw = new TW;
     pw->next = L[x]; pw->wierzcholek = y; pw->waga = z; L[x] = pw;
 	
